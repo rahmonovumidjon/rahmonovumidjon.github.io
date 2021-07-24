@@ -76,14 +76,15 @@ a.portfolio-image img {
 }
 
 @media(max-width: 575px) {
-    a {
+    a.portfolio-image {
         height: auto;
         width: 100%;
     }
 
-    a img {
+    a.portfolio-image img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: unset;
     }
 
     .row {
@@ -92,5 +93,9 @@ a.portfolio-image img {
 
     .row>div {
         padding: 6px;
+    }
+
+    .portfoilo-social a {
+        margin-right: 7.5px;
     }
 }
